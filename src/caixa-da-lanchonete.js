@@ -5,14 +5,14 @@ class CaixaDaLanchonete {
         const pagamento = ["dinheiro","debito","credito"]
         const cardapio = ["cafe","chantily","suco","sanduiche","queijo","salgado","combo1","combo2"]
         const valores = [3.00, 1.50, 6.20, 6.50, 2.00, 7.25, 9.50, 7.50]
-        const dor = "i"+itens;
+
 
         
 
         if(!pagamento.includes(metodoDePagamento)){
             return "Forma de pagamento inválida!";
         }
-        if (dor === 'i'){
+        if (itens.length === 0){
             return "Não há itens no carrinho de compra!";
         }
         
